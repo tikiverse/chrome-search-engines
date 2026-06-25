@@ -1,0 +1,26 @@
+[project]
+name = "chrome-search-engines"
+version = "0.1.0"
+description = "Export and import Google Chrome custom search engines"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+license = { text = "MIT" }
+authors = [
+  { name = "tikiverse" }
+]
+keywords = ["chrome", "search-engines", "sqlite", "uvx"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+]
+
+[project.scripts]
+cse = "chrome_search_engines.cli:main"
+chrome-search-engines = "chrome_search_engines.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
